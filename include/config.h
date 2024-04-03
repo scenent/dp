@@ -1,0 +1,38 @@
+#ifndef DP_CONFIG_H
+#define DP_CONFIG_H
+
+#define DP_USING_BROAD_PHASE
+
+#ifdef DP_USING_BROAD_PHASE
+#define DP_SWEEP_AND_PRUNE 0
+//#define DP_BOX2D 1 // NOT IMPLEMENTED YET
+
+#define DP_BROAD_PHASE_ALGORITHM    DP_SWEEP_AND_PRUNE
+#endif
+
+#define DP_SAT 0
+//#define DP_GJK_EPA 1 // NOT IMPLEMENTED YET
+
+#define DP_NARROW_PHASE_ALGORITHM    DP_SAT
+
+#define DP_EULER 0
+#define DP_IMPLICIT_EULER 1
+//#define DP_MIDPOINT 2 // NOT IMPLEMENTED YET
+//#define DP_LEAPFROG 3 // NOT IMPLEMENTED YET
+//#define DP_VERLET 4 // NOT IMPLEMENTED YET
+//#define DP_RK4 5 // NOT IMPLEMENTED YET
+
+#define DP_INTERGRATION_METHOD    DP_IMPLICIT_EULER
+
+constexpr double DP_TO_DEGREE = (180.0 / 3.141592);
+
+namespace dp {
+	using dpfloat = float;
+}
+
+
+
+
+
+
+#endif
