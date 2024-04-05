@@ -8,7 +8,6 @@
 
 namespace dp {
 	struct AABB {
-		int id;
 		float x, y, w, h;
 		float getMinX() const { return x; }
 		float getMaxX() const { return x + w; }
